@@ -1,6 +1,11 @@
 *{
     font-family: 'Roboto',sans-serif;
 }
+body{
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ffffff);
+    background: linear-gradient(to right, #FFFFFF, #ffffff);
+}
 main{
     max-width: 1200px;
     margin: 0 auto;
@@ -38,7 +43,7 @@ button{
 }
 .dishes{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(75px,200px));
+    grid-template-columns: repeat(4,minmax(75px,200px));
     grid-auto-rows: 1fr;
     gap: 30px;
     justify-content: center;
@@ -62,7 +67,8 @@ h2{
 }
 .menu-grid{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(75px,150px));
+    justify-content: center;
     gap: 15px;
 }
 .menu-grid-item{
